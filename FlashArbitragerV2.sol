@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.4;
+pragma solidity 0.8.20;
 
 /**
     Ropsten instances:
@@ -17,11 +17,11 @@ pragma solidity 0.8.4;
     - Aave LendingPoolAddressesProvider:    0x24a42fD28C976A61Df5D00D0599C34c4f90748c8
 */
 
-import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 import '@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol';
 
-import './interfaces/IERC3156FlashBorrower.sol';
-import './interfaces/IERC3156FlashLender.sol';
+import './openzeppelin-contracts/contracts/token/ERC20/IERC20.sol';
+import './openzeppelin-contracts/contracts/interfaces/IERC3156FlashBorrower.sol';
+import './openzeppelin-contracts/contracts/interfaces/IERC3156FlashLender.sol';
 
 contract ArbitragerV2 is IERC3156FlashBorrower {
     
